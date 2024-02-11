@@ -1,0 +1,18 @@
+.logo{
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+
+    color: $blue-main-color;
+   
+    &-header{
+        color: $black-main-color;
+    }
+
+    &-footer{
+        color: $adress-hero-color;
+    }
+
+}

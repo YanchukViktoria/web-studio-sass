@@ -1,0 +1,20 @@
+.header{
+    padding: 24px 0;
+
+    background-color: white;
+
+    z-index: 1;
+
+    position: fixed;
+
+    min-height: 80px;
+    width: 100%;
+
+    top: 0;
+
+    &-wrap{
+        display: flex;
+        align-items: center;
+    }
+
+}

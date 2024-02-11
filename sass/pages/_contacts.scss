@@ -1,0 +1,34 @@
+.contact-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding-left: 318px;
+
+    &-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $p-color;
+    }
+
+    &-item:hover{
+        color: $blue-main-color;
+    }
+
+
+    &-svg{
+        fill: currentColor;
+    }
+
+    &-link{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        position: relative;
+    
+        transition: color 0.5s ease;
+    }
+
+}
