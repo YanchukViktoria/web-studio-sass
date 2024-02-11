@@ -1,0 +1,90 @@
+.icons-list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    margin-top: 16px;
+
+    &-link{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: rgba(175, 177, 184);
+
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-link:hover{
+        color: &adress-hero-color;
+        background-color: &blue-main-color;
+    }
+
+    &-svg{
+        fill: currentColor;
+    }
+
+}
+
+        /* ico-clients */
+
+.client-ico-list{
+    display: flex;
+    gap: 30px;
+}
+
+.client-ico-item{
+    flex-basis: calc((100% - 150px) / 6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    border-radius: 4px;
+    border: solid 1px;
+    color: rgba(175, 177, 184);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+        color: &blue-main-color;
+        border-color: &blue-main-color;
+    }
+
+}
+
+.client-ico-svg{
+    fill: currentColor;
+}
+
+        /* ico-join */
+
+.join-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: &p-color;
+
+    &-link{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: &adress-hero-color;
+        background-color: rgba(255, 255, 255, 0.1);
+
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-link:hover{
+        background-color: &blue-main-color;
+    }
+
+    &-svg{
+        fill: currentColor;
+    }
+
+}
