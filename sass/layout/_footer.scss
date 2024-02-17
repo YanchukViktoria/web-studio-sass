@@ -1,73 +1,57 @@
 .footer{
-    background: $bg-color;
-    padding: 60px 0;
+        background: $bg-color;
+        padding: 60px 0;
 
     &-wrap{
-    display: flex;
-    gap: 70px;
+        display: flex;
+        gap: 70px;
     }
 
     &-ico-list{
-    display: flex;
-    gap: 10px;
+        display: flex;
+        gap: 10px;
 
-    margin-top: 20px;
+        margin-top: 20px;
     }
 
     &-fotm-title{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: $adress-hero-color;
-
-    margin-bottom: 20px;
+        @include font-style(Roboto, 14px, 700, 1.1, 0.03em, center);
+        text-transform: uppercase;
+        color: $adress-hero-color;
+        margin-bottom: 20px;
     }
 
     &-form{
-    display: flex;
-    gap: 12px;
+        display: flex;
+        gap: 12px;
     }
 
     &-form-input{
-    background-color: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    
-    padding: 15px;
-    
-    width: 358px;
-    
-    color: $adress-hero-color;
+        background-color: inherit;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        padding: 15px;
+        width: 358px;
+        color: $adress-hero-color;
     }
     
     &-form-input{
-    outline: none;
+        outline: none;
     }
     
     &-form-btn{
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.8;
-    letter-spacing: 0.06em;
-    text-align: center;
-    
-    color: $adress-hero-color;
-    background-color: $blue-main-color;
-    
-    padding: 10px 13px 10px 26px;
-    
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
-    border-radius: 4px;
+        @include font-style(Roboto, 16px, 700, 1.8, 0.06em, center);
+        color: $adress-hero-color;
+        background-color: $blue-main-color;
+        padding: 10px 13px 10px 26px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 4px;
     }
     
     &-form-svg{
-    fill: currentColor;
+        fill: currentColor;
     }
 }
 
@@ -75,21 +59,17 @@
     margin-top: 20px;
 
     &-list-link{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: $footer-mail-number-color;
-    text-decoration: none;
+        @include font-style(Roboto, 14px, 400, 1.7, 0.03em, left);
+        color: $footer-mail-number-color;
+        text-decoration: none;
     }
 
     &-list-location-link{
-    color: $adress-hero-color;
+        color: $adress-hero-color;
     }
 
     &-list-item{
-    margin-bottom: 9px;
+        margin-bottom: 9px;
     }
 
 }

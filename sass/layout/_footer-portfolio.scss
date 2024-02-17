@@ -1,107 +1,83 @@
 .footer{
     background: $bg-color;
     padding: 60px 0;
-}
 
-.footer-wrap{
-display: flex;
-gap: 70px;
+    &-wrap{
+        display: flex;
+        gap: 70px;
+    }
+
+    &-form{
+        display: flex;
+        gap: 12px;
+
+        &-title{
+            text-transform: uppercase;
+            @include font-style(Roboto, 14px, 700, 1.1, 0.03em, center);
+        
+            color: $adress-hero-color;
+            padding-bottom: 20px;
+        }
+
+        &-input{
+            background-color: inherit;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            padding: 15px;
+            width: 358px;
+            color: $adress-hero-color;
+        }
+
+        &-input{
+            outline: none;
+        }
+
+        &-btn{
+            @include font-style(Roboto, 16px, 700, 1.8, 0.06em, center);
+            
+            color: $adress-hero-color;
+            background-color: $blue-main-color;
+            padding: 10px 13px 10px 26px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 4px;
+        }
+
+        &-link{
+            color: $adress-hero-color;
+            width: 24px;
+            height: 24px;
+        }
+
+        &-svg{
+            fill: currentColor;
+        }
+    }
 }
 
 .adress-list{
-margin-top: 20px;
-}
+    margin-top: 20px;
 
-.adress-list-link{
-font-size: 14px;
-font-weight: 400;
-line-height: 1.7;
-letter-spacing: 0.03em;
-text-align: left;
-color: $footer-mail-number-color;
-text-decoration: none;
-}
+    &-link{
+        @include font-style(Roboto, 14px, 400, 1.7, 0.03em, left);
 
-.adress-list-location-link{
-color: $adress-hero-color;
-}
+        color: $footer-mail-number-color;
+        text-decoration: none;
+    }
 
-.adress-list-item{
-margin-bottom: 9px;
+    &-location-link{
+        color: $adress-hero-color;
+    }
+
+    &-item{
+        margin-bottom: 9px;
+    }
 }
 
 .join-ico-title{
-font-size: 14px;
-font-weight: 700;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-
-color: $adress-hero-color;
-
-margin-bottom: 20px;
-}
-
-.footer-fotm-title{
-font-size: 14px;
-font-weight: 700;
-line-height: 1.1;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-
-color: $adress-hero-color;
-
-padding-bottom: 20px;
-}
-
-.footer-form{
-display: flex;
-gap: 12px;
-}
-
-.footer-form-input{
-background-color: inherit;
-border: 1px solid rgba(255, 255, 255, 0.3);
-border-radius: 4px;
-
-padding: 15px;
-
-width: 358px;
-
-color: $adress-hero-color;
-}
-
-.footer-form-input{
-outline: none;
-}
-
-.footer-form-btn{
-font-family: Roboto;
-font-size: 16px;
-font-weight: 700;
-line-height: 1.8;
-letter-spacing: 0.06em;
-text-align: center;
-
-color: $adress-hero-color;
-background-color: $blue-main-color;
-
-padding: 10px 13px 10px 26px;
-
-display: flex;
-align-items: center;
-gap: 10px;
-
-border-radius: 4px;
-}
-
-.footer-form-link{
-color: $adress-hero-color;
-
-width: 24px;
-height: 24px;
-}
-
-.footer-form-svg{
-fill: currentColor;
+    @include font-style(Roboto, 14px, 700, 1.1, 0.03em, center);
+    text-transform: uppercase;
+    color: $adress-hero-color;
+    margin-bottom: 20px;
 }

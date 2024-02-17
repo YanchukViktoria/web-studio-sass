@@ -11,10 +11,10 @@
     text-align: left;
     }
 
-    .feautures-list-title{
+    &-title{
     font-weight: 700;
     line-height: 1,1;
-    color: var(--descript-and-header-color);
+    color: &descript-and-header-color;
     padding-bottom: 10px;
 
     padding-top: 30px;
@@ -22,65 +22,52 @@
 
     &-img-first::before{
     content: "";
-
     background-image: url(../img/antena.png);
     width: 270px;
     height: 120px;
     display: inline-block;
     background-repeat: no-repeat;
-
-    background-color: var(--bgimg-color);
-
+    background-color: &bgimg-color;
     background-position: center;
     }
 
     &-img-second::before{
     content: "";
-
     background-image: url(../img/clock.png);
     width: 270px;
     height: 120px;
     display: inline-block;
     background-repeat: no-repeat;
-
-    background-color: var(--bgimg-color);
-
+    background-color: &bgimg-color;
     background-position: center;
     }
 
     &-img-third::before{
     content: "";
-
     background-image: url(../img/diagramma.png);
     width: 270px;
     height: 120px;
     display: inline-block;
     background-repeat: no-repeat;
-
-    background-color: var(--bgimg-color);
-
+    background-color: &bgimg-color;
     background-position: center;
     }
 
     &-img-fourth::before{
     content: "";
-
     background-image: url(../img/astronaut.png);
     width: 270px;
     height: 120px;
     display: inline-block;
     background-repeat: no-repeat;
-
-    background-color: var(--bgimg-color);
-
+    background-color: &bgimg-color;
     background-position: center;
     }
 
     &-descript{
     font-weight: 400;
     line-height: 1.7;
-    color: var(--p-color);
-
+    color: &p-color;
     max-width: 270px;
     }
 

@@ -1,19 +1,20 @@
 @import "./base/reset";
+@import "./base/body";
 
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 
 @import "./components/container";
-
-@import "./base/body";
+@import "./components/logo";
+@import "./components/modal";
 
 @import "./layout/header";
-
-@import "./components/logo";
-
 @import "./layout/navigation";
 
+@import "./pages/social";
 @import "./pages/contacts";
+@import "./pages/portfolio";
+@import "./pages/contacts-portfolio";
 
 @import "./layout/hero";
 @import "./layout/feautures";
@@ -21,15 +22,5 @@
 @import "./layout/team";
 @import "./layout/clients";
 @import "./layout/footer";
-
-@import "./pages/social";
-
-@import "./components/modal";
-
-@import "./pages/portfolio";
-
 @import "./layout/heder-portfolio";
-
-@import "./pages/contacts-portfolio";
-
 @import "./layout/footer-portfolio";

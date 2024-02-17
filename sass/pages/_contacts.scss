@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     gap: 30px;
-
     padding-left: 318px;
 
     &-item{
@@ -16,7 +15,6 @@
         color: $blue-main-color;
     }
 
-
     &-svg{
         fill: currentColor;
     }
@@ -27,7 +25,6 @@
         line-height: 1.1;
         letter-spacing: 0.02em;
         position: relative;
-    
         transition: color 0.5s ease;
     }
 
