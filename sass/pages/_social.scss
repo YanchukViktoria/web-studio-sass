@@ -1,12 +1,8 @@
-
-
-        /* ico-join */
-
 .join-list{
     display: flex;
     align-items: center;
     gap: 10px;
-    color: &p-color;
+    color: $p-color;
 
     &-link{
         width: 44px;
@@ -15,18 +11,30 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        color: &adress-hero-color;
+        color: $adress-hero-color;
         background-color: rgba(255, 255, 255, 0.1);
 
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &-link:hover{
-        background-color: &blue-main-color;
+        background-color: $blue-main-color;
     }
 
     &-svg{
         fill: currentColor;
     }
 
+}
+
+.join-ico-title{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    color: $adress-hero-color;
 }

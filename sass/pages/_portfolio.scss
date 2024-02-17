@@ -1,0 +1,103 @@
+.section-portfolio{
+    padding-bottom: 94px;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &-move{
+        padding: 24px 20px;
+    }
+
+    &-title{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $descript-and-header-color;
+    }
+
+    &-descript{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.8;
+        letter-spacing: 0.03em;
+
+        margin-top: 19px;
+
+        color: $p-color;
+    }
+
+    &-item{
+        outline: 1px solid $white-main-color;
+        box-sizing: content-box;
+
+        position: relative;
+    }
+
+}
+
+.img-wrap{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-overlay-desc{
+    position: absolute;
+
+    top: 1px;
+
+    padding-left:24px;
+    padding-right:24px;
+    padding-top: 63px;
+
+    max-width: 322px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+
+    color: $adress-hero-color;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    height: 231px;
+
+    transform: translateY(100%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-link:hover .portfolio-overlay-desc{
+    transform: translateY(0);
+}
+
+.portfolio-list-item:hover{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+.filter-list{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 94px;
+    padding-bottom: 34px;
+
+    &-btn{
+        padding: 6px 22px;
+        border-radius: 4px;
+    }
+
+    &-btn:hover{
+        color: $adress-hero-color;
+        background-color: $blue-main-color;
+
+        transition: background-color 0.5s ease;
+
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+
+    }
+
+}

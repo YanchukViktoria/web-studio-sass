@@ -1,16 +1,7 @@
 .header{
-    padding: 24px 0;
+    @extend %header-wrap;
 
-    background-color: white;
-
-    z-index: 1;
-
-    position: fixed;
-
-    min-height: 80px;
-    width: 100%;
-
-    top: 0;
+    // min-height: 80px;
 
     &-wrap{
         display: flex;

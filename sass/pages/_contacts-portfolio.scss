@@ -1,0 +1,23 @@
+.contacts-list{
+    display: flex;
+    gap: 50px;
+
+    margin-left: 315px;
+
+    &-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $p-color;
+
+        transition: color 0.5s ease;
+    }
+
+    &-item:hover{
+        color: $blue-main-color;
+    }
+
+    &-svg{
+        fill: currentColor;
+    }
+}

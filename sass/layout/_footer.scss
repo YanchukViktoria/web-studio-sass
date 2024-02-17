@@ -1,5 +1,5 @@
 .footer{
-    background: &bg-color;
+    background: $bg-color;
     padding: 60px 0;
 
     &-wrap{
@@ -21,7 +21,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: &adress-hero-color;
+    color: $adress-hero-color;
 
     margin-bottom: 20px;
     }
@@ -40,7 +40,7 @@
     
     width: 358px;
     
-    color: &adress-hero-color;
+    color: $adress-hero-color;
     }
     
     &-form-input{
@@ -54,8 +54,8 @@
     letter-spacing: 0.06em;
     text-align: center;
     
-    color: &adress-hero-color;
-    background-color: &blue-main-color;
+    color: $adress-hero-color;
+    background-color: $blue-main-color;
     
     padding: 10px 13px 10px 26px;
     
@@ -80,12 +80,12 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
-    color: &footer-mail-number-color;
+    color: $footer-mail-number-color;
     text-decoration: none;
     }
 
     &-list-location-link{
-    color: &adress-hero-color;
+    color: $adress-hero-color;
     }
 
     &-list-item{

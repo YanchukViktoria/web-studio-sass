@@ -1,10 +1,16 @@
 .nav-list{
     @extend %nav-list;
 
-    margin-left: 93px;
+    &-link{
+        position: relative;
+    }
+
+    &-item, &-link, .contacts-list-item{
+        @extend %portfolio-nav-link-item-contacts;
+    }
 
     &-link:hover{
-        color: $blue-main-color;
+        color: var(--blue-main-color);
     }
 
     &-link-current::before{
@@ -16,21 +22,9 @@
         height: 4px;
         border-radius: 2px;
         background-color: rgba(33, 150, 243, 1);
-        margin-bottom: -32px;
-
+        margin-bottom: -33px;
+    
         animation-name: ani;
         animation-duration: 3s;
     }
-
-    &-item, &-link{
-        font-size: 14px;
-        line-height: 16px;
-        font-weight: 500;
-        line-height: 1.1;
-        letter-spacing: 0.02em;
-        position: relative;
-
-        transition: color 0.5s ease;
-    }
-
 }

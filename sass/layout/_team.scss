@@ -50,3 +50,33 @@
     }
 
 }
+
+.icons-list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    margin-top: 16px;
+
+    &-link{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: rgba(175, 177, 184);
+
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-link:hover{
+        color: $adress-hero-color;
+        background-color: $blue-main-color;
+    }
+
+    &-svg{
+        fill: currentColor;
+    }
+
+}

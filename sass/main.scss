@@ -1,24 +1,34 @@
 @import "./base/reset";
-@import "./abstracts/placeholders";
+
+@import "./abstracts/mixins";
 @import "./abstracts/variables";
+
 @import "./components/container";
 
 @import "./base/body";
+
 @import "./layout/header";
+
 @import "./components/logo";
+
 @import "./layout/navigation";
+
 @import "./pages/contacts";
 
 @import "./layout/hero";
-
 @import "./layout/feautures";
-
 @import "./layout/work";
-
 @import "./layout/team";
-
 @import "./layout/clients";
-
-@import "./components/ico";
-
 @import "./layout/footer";
+
+@import "./pages/social";
+@import "./components/modal";
+
+@import "./pages/portfolio";
+
+@import "./layout/heder-portfolio";
+
+@import "./pages/contacts-portfolio";
+
+@import "./layout/footer-portfolio";
