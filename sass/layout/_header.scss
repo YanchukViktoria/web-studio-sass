@@ -1,8 +1,6 @@
 .header{
     @extend %header-wrap;
 
-    // min-height: 80px;
-
     &-wrap{
         display: flex;
         align-items: center;
