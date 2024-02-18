@@ -20,10 +20,7 @@
     }
 
     &-link{
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.1;
-        letter-spacing: 0.02em;
+        @include font-style(Roboto, 14px, 500, 1.1, 0.02em, _, _);
         position: relative;
         transition: color 0.5s ease;
     }

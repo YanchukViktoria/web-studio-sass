@@ -55,22 +55,5 @@
     }
 }
 
-.adress{
-    margin-top: 20px;
 
-    &-list-link{
-        @include font-style(Roboto, 14px, 400, 1.7, 0.03em, left);
-        color: $footer-mail-number-color;
-        text-decoration: none;
-    }
-
-    &-list-location-link{
-        color: $adress-hero-color;
-    }
-
-    &-list-item{
-        margin-bottom: 9px;
-    }
-
-}
 

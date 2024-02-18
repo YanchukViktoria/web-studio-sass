@@ -14,16 +14,6 @@
     }
 
     &-link-current::before{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left:0;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: rgba(33, 150, 243, 1);
-        margin-bottom: -33px;
-        animation-name: ani;
-        animation-duration: 3s;
+        @extend %nav-link-current;
     }
 }

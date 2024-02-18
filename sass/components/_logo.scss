@@ -1,6 +1,5 @@
 .logo{
-    @include font-style(Raleway, 26px, 700, 1.1, 0.03em, center);
-    color: $blue-main-color;
+    @include font-style(Raleway, 26px, 700, 1.1, 0.03em, center, $blue-main-color);
    
     &-header{
         color: $black-main-color;

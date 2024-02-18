@@ -28,13 +28,12 @@
     flex-direction: column;
   
     &-desc{
-        @include font-style(Roboto, 20px, 700, 1.1, 0.03em, center);
+        @include font-style(Roboto, 20px, 700, 1.1, 0.03em, center, _);
         padding-bottom: 12px;
     }
   
     &-name-span{
-        @include font-style(Roboto, 12px, 400, 1.1, 0.01em, center);
-        color: $p-color;
+        @include font-style(Roboto, 12px, 400, 1.1, 0.01em, center, $p-color);
         padding-bottom: 4px;
     }
   

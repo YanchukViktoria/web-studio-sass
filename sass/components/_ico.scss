@@ -5,19 +5,37 @@
     color: &p-color;
 
     &-link{
-        width: 44px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
+        @extend %svg-link;
         color: &adress-hero-color;
         background-color: rgba(255, 255, 255, 0.1);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &-link:hover{
         background-color: &blue-main-color;
+    }
+
+    &-svg{
+        fill: currentColor;
+    }
+
+}
+
+//team-ico
+
+.icons-list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+
+    &-link{
+        @extend %svg-link;
+        color: rgba(175, 177, 184);
+    }
+
+    &-link:hover{
+        color: $adress-hero-color;
+        background-color: $blue-main-color;
     }
 
     &-svg{

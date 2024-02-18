@@ -4,7 +4,7 @@
 
     &-title{
         margin-bottom: 50px;
-        @include font-style(Roboto, 36px, 700, 1.6, 0.03em, center);
+        @include font-style(Roboto, 36px, 700, 1.6, 0.03em, center, _);
     }
 
 }
@@ -14,12 +14,8 @@
         justify-content: space-between;
 
     &-title, &-descript{
-        font-size: 16px;
-        line-height: 1.1;
-        letter-spacing: 0.03em;
-        text-align: center;
+        @extend %team-list-title-desc;
     }
-
 
     &-item{
         background: $adress-hero-color;
@@ -34,43 +30,13 @@
     }
 
     &-title{
-        color: $descript-and-header-color;
         margin-bottom: 10px;
-        font-weight: 500;
-        margin-top: 30px;
+        @include font-style(Roboto, _, 500, _, _, _, $descript-and-header-color);
     }
 
     &-descript{
         color: $p-color;
         font-weight: 400;
-    }
-
-}
-
-.icons-list{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 16px;
-
-    &-link{
-        width: 44px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        color: rgba(175, 177, 184);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &-link:hover{
-        color: $adress-hero-color;
-        background-color: $blue-main-color;
-    }
-
-    &-svg{
-        fill: currentColor;
     }
 
 }

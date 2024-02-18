@@ -1,0 +1,17 @@
+.adress-list{
+    margin-top: 20px;
+
+    &-link{
+        @include font-style(Roboto, 14px, 400, 1.7, 0.03em, left);
+        color: $footer-mail-number-color;
+        text-decoration: none;
+    }
+
+    &-location-link{
+        color: $adress-hero-color;
+    }
+
+    &-item{
+        margin-bottom: 9px;
+    }
+}
