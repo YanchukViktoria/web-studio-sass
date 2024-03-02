@@ -1,26 +1,38 @@
+@import "./base/container";
 @import "./base/reset";
-@import "./base/body";
+@import "./base/typography";
 
 @import "./abstracts/mixins";
+@import "./abstracts/placeholders";
 @import "./abstracts/variables";
 
-@import "./components/container";
+@import "./components/adress-portfolio";
+@import "./components/adress";
+@import "./components/feautures-decor";
+@import "./components/form-ico";
+@import "./components/ico";
 @import "./components/logo";
+@import "./components/main-btn";
+@import "./components/portfolio-btn";
+@import "./components/modal-form";
 @import "./components/modal";
-
-@import "./layout/header";
-@import "./layout/navigation";
+@import "./components/modal-close";
 
 @import "./pages/social";
 @import "./pages/contacts";
 @import "./pages/portfolio";
 @import "./pages/contacts-portfolio";
 
-@import "./layout/hero";
-@import "./layout/feautures";
-@import "./layout/work";
-@import "./layout/team";
 @import "./layout/clients";
-@import "./layout/footer";
-@import "./layout/heder-portfolio";
+@import "./layout/feautures";
 @import "./layout/footer-portfolio";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/heder-portfolio";
+@import "./layout/hero";
+@import "./layout/navigation-and-portfolio-navigation";
+@import "./layout/team";
+@import "./layout/work";
+
+
+

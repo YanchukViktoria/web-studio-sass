@@ -6,24 +6,8 @@
     background-size: cover;
 
     &-title{
-        @include font-style(Roboto, 44px, 900, 1.3, 0.06em, center);
-        color: $adress-hero-color;
+        @include font-style(Roboto, 44px, 900, 1.3, 0.06em, center, $adress-hero-color);
         max-width: 696px;
         margin: 0 auto;
     }
-
-    &-btn{
-        @include font-style(Roboto, 16px, 700, 1.8, 0.06em, center);
-
-        width: 216px;
-        height: 50px;
-        border-radius: 4px;
-        display: block;
-        margin: 0 auto;
-        margin-top: 30px;
-        background-color: $blue-main-color;
-        color: $white-main-color;
-
-    }
-
 }

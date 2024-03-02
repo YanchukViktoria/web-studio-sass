@@ -13,9 +13,7 @@
 
         &-title{
             text-transform: uppercase;
-            @include font-style(Roboto, 14px, 700, 1.1, 0.03em, center);
-        
-            color: $adress-hero-color;
+            @include font-style(Roboto, 14px, 700, 1.1, 0.03em, _, $adress-hero-color);
             padding-bottom: 20px;
         }
 
@@ -33,9 +31,7 @@
         }
 
         &-btn{
-            @include font-style(Roboto, 16px, 700, 1.8, 0.06em, center);
-            
-            color: $adress-hero-color;
+            @include font-style(Roboto, 16px, 700, 1.8, 0.06em, center, $adress-hero-color);
             background-color: $blue-main-color;
             padding: 10px 13px 10px 26px;
             display: flex;
@@ -59,8 +55,7 @@
 
 
 .join-ico-title{
-    @include font-style(Roboto, 14px, 700, 1.1, 0.03em, center);
+    @include font-style(Roboto, 14px, 700, 1.1, 0.03em, _, $adress-hero-color);
     text-transform: uppercase;
-    color: $adress-hero-color;
     margin-bottom: 20px;
 }

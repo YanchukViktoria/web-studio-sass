@@ -4,14 +4,8 @@
 }
     
 .client-title{
-    @include font-style(Roboto, 36px, 700, 1.1, 0.03em, center);
-
+    @include font-style(Roboto, 36px, 700, 1.1, 0.03em, center, _);
     margin-bottom: 50px;
-}
-
-.client-ico-list{
-    display: flex;
-    gap: 30px;
 }
 
 .client-ico-item{
@@ -30,8 +24,4 @@
         border-color: $blue-main-color;
     }
 
-}
-
-.client-ico-svg{
-    fill: currentColor;
 }

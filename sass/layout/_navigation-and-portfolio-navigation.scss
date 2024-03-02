@@ -1,0 +1,16 @@
+.nav-list{
+    @extend %nav;
+    margin-left: 93px;
+
+    &-link:hover{
+        color: $blue-main-color;
+    }
+
+    &-link-current::before{
+        @extend %link-current;
+    }
+
+    &-item, &-link{
+        @extend %nav-list-item-link;
+    }
+}

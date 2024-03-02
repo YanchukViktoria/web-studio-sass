@@ -13,10 +13,6 @@
         display: flex;
         justify-content: space-between;
 
-    &-title, &-descript{
-        @extend %team-list-title-desc;
-    }
-
     &-item{
         background: $adress-hero-color;
         height: 428px;
@@ -30,13 +26,13 @@
     }
 
     &-title{
-        margin-bottom: 10px;
-        @include font-style(Roboto, _, 500, _, _, _, $descript-and-header-color);
+        margin: 30px 10px;
+        @include font-style(Roboto, 16px, 500, 1.1, 0.03em, center, $descript-and-header-color);
+
     }
 
     &-descript{
-        color: $p-color;
-        font-weight: 400;
+        @include font-style(Roboto, 16px, 400, 1.1, 0.03em, center, $p-color)
     }
 
 }

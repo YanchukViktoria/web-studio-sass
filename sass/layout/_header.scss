@@ -1,5 +1,5 @@
 .header{
-    @extend %header-wrap;
+    @extend %header-wrap !optional;
 
     &-wrap{
         display: flex;

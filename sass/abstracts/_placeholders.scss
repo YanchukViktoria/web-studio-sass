@@ -7,10 +7,16 @@
     top: 0;
 }
 
-%nav-list{
+%nav{
     display: flex;
     gap: 50px;
     position: relative;
+}
+
+%nav-list-item-link{
+    @include font-style(Roboto, 14px, 500, 1.1, 0.02em, center, _);
+    position: relative;
+    transition: color 0.5s ease;
 }
 
 %portfolio-nav-link-item-contacts{
@@ -20,14 +26,7 @@
     transition: color 0.5s ease;
 }
 
-%team-list-title-desc{
-    font-size: 16px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-
-%nav-link-current{
+%link-current{
     content: "";
     position: absolute;
     bottom: 0;

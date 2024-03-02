@@ -6,9 +6,13 @@
     display: flex;
     justify-content: space-between;
 
-    &-title, .feautures-list-descript{
-    letter-spacing: 0.03em;
-    text-align: left;
+    &-title{
+        @include font-style(Roboto, 14px, 700, 1.1, 0.03em, left, $descript-and-header-color);
+    }
+
+    &-descript{
+        @include font-style(Roboto, 14px, 400, 1.1, 0.03em, left, $p-color);
+        max-width: 270px;
     }
 
     &-title{
@@ -19,56 +23,4 @@
 
     padding-top: 30px;
     }
-
-    &-img-first::before{
-    content: "";
-    background-image: url(../img/antena.png);
-    width: 270px;
-    height: 120px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-color: &bgimg-color;
-    background-position: center;
-    }
-
-    &-img-second::before{
-    content: "";
-    background-image: url(../img/clock.png);
-    width: 270px;
-    height: 120px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-color: &bgimg-color;
-    background-position: center;
-    }
-
-    &-img-third::before{
-    content: "";
-    background-image: url(../img/diagramma.png);
-    width: 270px;
-    height: 120px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-color: &bgimg-color;
-    background-position: center;
-    }
-
-    &-img-fourth::before{
-    content: "";
-    background-image: url(../img/astronaut.png);
-    width: 270px;
-    height: 120px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-color: &bgimg-color;
-    background-position: center;
-    }
-
-    &-descript{
-    font-weight: 400;
-    line-height: 1.7;
-    color: &p-color;
-    max-width: 270px;
-    }
-
 }
