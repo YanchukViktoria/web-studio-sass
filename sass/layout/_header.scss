@@ -1,9 +1,26 @@
+@media screen and (max-width: 768px) {
+    .contact-list, .nav{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-btn{
+        display: none;
+    }
+}
+
 .header{
     @extend %header-wrap !optional;
 
     &-wrap{
         display: flex;
         align-items: center;
+    }
+
+    &-btn{
+        margin-left: auto;
+        background-color: inherit;
     }
 
 }

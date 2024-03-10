@@ -25,3 +25,24 @@
     }
 
 }
+
+@media screen and (max-width: 1200px) {
+    .client-ico-list{
+        flex-wrap: wrap;
+    }
+
+    .client-ico-item{
+        min-width: 226px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .client-ico-list{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .client-ico-item{
+        min-width: 210px;
+    }
+}

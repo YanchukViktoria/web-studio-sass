@@ -5,7 +5,6 @@
     color: $p-color;
 
     &-link{
-        @extend %list-link !optional;
         color: $adress-hero-color;
         background-color: rgba(255, 255, 255, 0.1);
     }

@@ -41,3 +41,16 @@
     background-color: $bgimg-color;
     background-position: center;
 }
+
+@media screen and (max-width: 768px) {
+    .feautures-list-img-first::before, .feautures-list-img-second::before, .feautures-list-img-third::before, .feautures-list-img-fourth::before{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .feautures-list-img-first::before, .feautures-list-img-second::before, .feautures-list-img-third::before, .feautures-list-img-fourth::before{
+        width: 354px;
+    }
+}
+

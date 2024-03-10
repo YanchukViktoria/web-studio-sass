@@ -18,9 +18,39 @@
     &-title{
     font-weight: 700;
     line-height: 1,1;
-    color: &descript-and-header-color;
+    color: $descript-and-header-color;
     padding-bottom: 10px;
 
     padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feautures-list{
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-descript{
+            min-width: 450px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .feautures-list{
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+
+        &-descript{
+            min-width: 354px;
+        }
     }
 }
