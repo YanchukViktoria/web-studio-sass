@@ -7,3 +7,16 @@
     text-align: $ta;
     color: $color;
 }
+
+@mixin tab($breakpoint){
+    @media screen and (min-width: $breakpoint){
+        @content;
+    }
+}
+
+@mixin desc($breakpoint){
+    @media screen and (min-width: $breakpoint){
+        @content;
+    }
+}
+

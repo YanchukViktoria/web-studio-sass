@@ -6,10 +6,15 @@
 
 .modal-texarea{
     resize: none;
-    min-width: 448px;
-    min-height: 138px;
-    border: 1px solid rgba(33, 33, 33, 0.2)
+    min-width: 370px;
+    min-height: 120px;
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
 
+    @include desc(1200px){
+        min-width: 448px;
+        min-height: 138px;
+    }
 }
 
 .modal-texarea::placeholder{
@@ -21,12 +26,15 @@
 
 .modal-name-span{
     @include font-style(Roboto, 12px, 400, 1.1, 0.01em, center, $p-color);
-    padding-bottom: 4px;
 }
 
 .modal-span-privacy{
-    @include font-style(Roboto, 14px, 400, 1.7, 0.03em, center, _);
+    @include font-style(Roboto, 12px, 400, 1.1, 0.03em, center, _);
     padding-left: 8px;
+
+    @include desc(1200px){
+        @include font-style(Roboto, 14px, 400, 1.7, 0.03em, center, _);
+    }
 }
 
 //modal inputs

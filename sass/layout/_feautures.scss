@@ -1,56 +1,58 @@
 .section-features{
-    padding: 94px 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    @include desc(1200px){
+        padding: 94px 0;
+    }
 }
 
 .feautures-list{
-    display: flex;
-    justify-content: space-between;
-
-    &-title{
-        @include font-style(Roboto, 14px, 700, 1.1, 0.03em, left, $descript-and-header-color);
-    }
 
     &-descript{
         @include font-style(Roboto, 14px, 400, 1.1, 0.03em, left, $p-color);
-        max-width: 270px;
+        width: 450px;
+        margin-bottom: 30px;
+
+        @include desc(1200px){
+            margin: 0;
+        }
     }
 
     &-title{
-    font-weight: 700;
-    line-height: 1,1;
-    color: $descript-and-header-color;
-    padding-bottom: 10px;
+        @include font-style(Roboto, 14px, 700, 1.1, 0.03em, center, $descript-and-header-color);
+        padding-bottom: 10px;
+        padding-top: 30px;
 
-    padding-top: 30px;
+        @include desc(1200px){
+            @include font-style(Roboto, 14px, 700, 1.1, 0.03em, left, $descript-and-header-color);
+        }
     }
-}
 
-@media screen and (max-width: 768px) {
-    .feautures-list{
+    @include tab(768px){
+        display: flex;
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center;
+        flex-direction: row;
 
         &-item{
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
 
         &-descript{
-            min-width: 450px;
+            width: 354px;
         }
     }
-}
 
-@media screen and (max-width: 1200px) {
-    .feautures-list{
+    @include desc(1200px){
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center;
 
         &-descript{
-            min-width: 354px;
+            width: 270px;
         }
     }
 }

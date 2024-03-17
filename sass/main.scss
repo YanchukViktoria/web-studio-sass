@@ -1,10 +1,13 @@
-@import "./base/container";
-@import "./base/reset";
-@import "./base/typography";
+
 
 @import "./abstracts/mixins";
 @import "./abstracts/placeholders";
 @import "./abstracts/variables";
+
+@import "./base/container";
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/body";
 
 @import "./components/adress-portfolio";
 @import "./components/adress";
@@ -25,7 +28,7 @@
 
 @import "./layout/clients";
 @import "./layout/feautures";
-@import "./layout/footer-portfolio";
+// @import "./layout/footer-portfolio";
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/heder-portfolio";

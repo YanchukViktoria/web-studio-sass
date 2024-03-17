@@ -1,56 +1,75 @@
 .feautures-list-img-first::before{
     content: "";
     background-image: url(../img/antena.png);
-    width: 270px;
+    width: 450px;
     height: 120px;
     display: inline-block;
     background-repeat: no-repeat;
     background-color: $bgimg-color;
     background-position: center;
+
+    @include tab(768px){
+        width: 354px;
+    }
+
+    @include desc(1200px){
+        width: 270px;
+    }
 }
 
 .feautures-list-img-second::before{
     content: "";
     background-image: url(../img/clock.png);
-    width: 270px;
+    width: 450px;
     height: 120px;
     display: inline-block;
     background-repeat: no-repeat;
     background-color: $bgimg-color;
     background-position: center;
+
+    @include tab(768px){
+        width: 354px;
+    }
+
+    @include desc(1200px){
+        width: 270px;
+    }
 }
 
 .feautures-list-img-third::before{
     content: "";
     background-image: url(../img/diagramma.png);
-    width: 270px;
+    width: 450px;
     height: 120px;
     display: inline-block;
     background-repeat: no-repeat;
     background-color: $bgimg-color;
     background-position: center;
+
+    @include tab(768px){
+        width: 354px;
+    }
+
+    @include desc(1200px){
+        width: 270px;
+    }
 }
 
 .feautures-list-img-fourth::before{
     content: "";
     background-image: url(../img/astronaut.png);
-    width: 270px;
+    width: 450px;
     height: 120px;
     display: inline-block;
     background-repeat: no-repeat;
     background-color: $bgimg-color;
     background-position: center;
-}
 
-@media screen and (max-width: 768px) {
-    .feautures-list-img-first::before, .feautures-list-img-second::before, .feautures-list-img-third::before, .feautures-list-img-fourth::before{
-        width: 450px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .feautures-list-img-first::before, .feautures-list-img-second::before, .feautures-list-img-third::before, .feautures-list-img-fourth::before{
+    @include tab(768px){
         width: 354px;
     }
-}
 
+    @include desc(1200px){
+        width: 270px;
+    }
+}

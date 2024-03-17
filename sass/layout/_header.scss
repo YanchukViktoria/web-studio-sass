@@ -11,7 +11,8 @@
 }
 
 .header{
-    @extend %header-wrap !optional;
+    @extend %header-wrap;
+    padding: 16px 0;
 
     &-wrap{
         display: flex;
@@ -23,4 +24,11 @@
         background-color: inherit;
     }
 
+    @include tab(768px){
+        padding: 21px 0;
+    }
+
+    @include desc(1200px){
+        padding: 25px 0;
+    }
 }

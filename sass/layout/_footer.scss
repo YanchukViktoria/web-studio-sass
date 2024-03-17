@@ -4,7 +4,14 @@
 
     &-wrap{
         display: flex;
-        gap: 70px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px 165px;
+
+        @include desc(1200px){
+            flex-wrap: nowrap;
+            gap: 0;
+        }
     }
 
     &-ico-list{
@@ -14,15 +21,35 @@
         margin-top: 20px;
     }
 
-    &-fotm-title{
-        @include font-style(Roboto, 14px, 700, 1.1, 0.03em, _, $adress-hero-color);
+    &-addres{
+        text-align: center;
+
+        @include desc(1200px){
+            text-align-last: left;
+            margin-right: 70px;
+        }
+    }
+
+    &-form-title{
+        @include font-style(Roboto, 14px, 700, 1.1, 0.03em, center, $adress-hero-color);
         text-transform: uppercase;
         margin-bottom: 20px;
+
+        @include desc(1200px){
+            @include font-style(Roboto, 14px, 700, 1.1, 0.03em, left, $adress-hero-color);
+        }
     }
 
     &-form{
         display: flex;
-        gap: 12px;
+        gap: 20px 12px;
+        flex-direction: column;
+        align-items: center;
+
+        @include desc(1200px){
+            flex-direction: row;
+        }
+
     }
 
     &-form-input{
@@ -36,12 +63,17 @@
     
     &-form-input{
         outline: none;
+        min-width: 450px;
+
+        @include desc(1200px){
+            min-width: 258px;
+        }
     }
     
     &-form-btn{
         @include font-style(Roboto, 16px, 700, 1.8, 0.06em, center, $adress-hero-color);
         background-color: $blue-main-color;
-        padding: 10px 13px 10px 26px;
+        padding: 10px 31px;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -50,81 +82,5 @@
     
     &-form-svg{
         fill: currentColor;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .footer-wrap{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 60px 165px;
-    }
-
-    .footer-addres{
-        text-align: center;
-    }
-
-    // social
-
-    .join-ico{
-        text-align: center;
-    }
-
-    // footer-form
-
-    .footer-form-div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-form{
-        flex-direction: column;
-        align-items: center;
-
-        &-input{
-            min-width: 450px;
-        }
-
-        &-btn{
-            display: block;
-        }
-    }
-
-    .footer-wrap{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 60px 165px;
-    }
-
-    .footer-addres{
-        text-align: center;
-    }
-
-    // social
-
-    .join-ico{
-        text-align: center;
-    }
-
-    // footer-form
-
-    .footer-form-div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-form{
-        flex-direction: column;
-        align-items: center;
-
-        &-input{
-            min-width: 450px;
-        }
-
-        &-btn{
-            display: block;
-        }
     }
 }

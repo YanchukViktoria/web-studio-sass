@@ -3,6 +3,7 @@
     align-items: center;
     gap: 10px;
     color: $p-color;
+    margin-right: 93px;
 
     &-link{
         color: $adress-hero-color;
@@ -20,7 +21,11 @@
 }
 
 .join-ico-title{
-    @include font-style(Roboto, 14px, 700, 1.1, 0.03em, _, $adress-hero-color);
+    @include font-style(Roboto, 14px, 700, 1.1, 0.03em, center, $adress-hero-color);
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @include desc(1200px){
+        @include font-style(Roboto, 14px, 700, 1.1, 0.03em, left, $adress-hero-color);
+    }
 }

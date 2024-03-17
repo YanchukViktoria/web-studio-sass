@@ -1,15 +1,13 @@
-
-
 .contact-list{
     display: flex;
-    gap: 30px;
-    padding-left: 318px;
+    align-items: center;
 
     &-item{
         display: flex;
         align-items: center;
         gap: 10px;
         color: $p-color;
+        
     }
 
     &-item:hover{
@@ -18,27 +16,38 @@
 
     &-svg{
         fill: currentColor;
+
+        @include desc(1200px){
+            width: 16px;
+            height: 12px;
+        }
+
+        &-phone{
+            width: 10px;
+            height: 14px;
+        }
     }
 
     &-link{
-        @include font-style(Roboto, 14px, 500, 1.1, 0.02em, _, _);
+        @include font-style(Roboto, 12px, 500, 1.1, 0.02em, _, _);
         position: relative;
         transition: color 0.5s ease;
+
+        @include desc(1200px){
+            @include font-style(Roboto, 14px, 500, 1.1, 0.02em, _, _);
+        }
     }
 
-}
-
-@media screen and (min-width: 768px) {
-    .contact-list{
+    @include tab(768px){
         flex-direction: column;
         align-items: flex-start;
+        gap: 10px;
+        margin-left: 96px;
     }
-}
 
-@media screen and (min-width: 1200px) {
-    .contact-list{
+    @include desc(1200px){
         flex-direction: row;
-        align-items: center;
+        gap: 30px;
+        margin-left: 315px;
     }
 }
-

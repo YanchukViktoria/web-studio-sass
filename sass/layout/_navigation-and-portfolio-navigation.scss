@@ -1,6 +1,6 @@
 .nav-list{
     @extend %nav;
-    margin-left: 93px;
+    margin-left: 88px;
 
     &-link:hover{
         color: $blue-main-color;
@@ -12,5 +12,9 @@
 
     &-item, &-link{
         @extend %nav-list-item-link;
+    }
+
+    @include desc(1200px){
+        margin-left: 93px;
     }
 }
