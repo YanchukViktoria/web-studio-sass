@@ -3,7 +3,6 @@
     align-items: center;
     gap: 10px;
     color: $p-color;
-    margin-right: 93px;
 
     &-link{
         color: $adress-hero-color;
@@ -18,6 +17,9 @@
         fill: currentColor;
     }
 
+    @include desc(1200px){
+        margin-right: 93px;
+    }
 }
 
 .join-ico-title{

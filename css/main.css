@@ -390,6 +390,15 @@ body {
 .filter-list-btn {
   padding: 6px 22px;
   border-radius: 4px;
+  background-color: rgb(245, 244, 250);
+  display: block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: _;
+  color: rgb(33, 33, 33);
 }
 .filter-list-btn:hover {
   color: rgb(255, 255, 255);
@@ -597,7 +606,6 @@ body {
           align-items: center;
   gap: 10px;
   color: rgb(117, 117, 117);
-  margin-right: 93px;
 }
 .join-list-link {
   color: rgb(255, 255, 255);
@@ -608,6 +616,11 @@ body {
 }
 .join-list-svg {
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .join-list {
+    margin-right: 93px;
+  }
 }
 
 .join-ico-title {
@@ -650,6 +663,8 @@ body {
           align-items: center;
   gap: 10px;
   color: rgb(117, 117, 117);
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 .contact-list-item:hover {
   color: rgb(33, 150, 243);
@@ -715,40 +730,70 @@ body {
 }
 
 .section-portfolio {
-  padding-bottom: 94px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .section-portfolio {
+    padding-bottom: 94px;
+  }
 }
 
-.portfolio-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-}
 .portfolio-list-move {
-  padding: 24px 20px;
+  padding: 20px 24px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list-move {
+    padding: 24px 20px;
+  }
 }
 .portfolio-list-title {
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-align: left;
   color: rgb(33, 33, 33);
 }
 .portfolio-list-descript {
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0.03em;
-  margin-top: 19px;
+  text-align: left;
   color: rgb(117, 117, 117);
+  margin-top: 19px;
 }
 .portfolio-list-item {
   outline: 1px solid rgb(236, 236, 236);
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   position: relative;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list-item {
+    max-width: 354px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list-item {
+    max-width: 370px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .img-wrap {
@@ -759,21 +804,31 @@ body {
 .portfolio-overlay-desc {
   position: absolute;
   top: 1px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 63px;
-  max-width: 322px;
+  padding: 63px 24px 0px 24px;
+  max-width: 450px;
+  height: 294px;
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
+  text-align: _;
   color: rgb(255, 255, 255);
   background-color: rgba(33, 150, 243, 0.9);
-  height: 231px;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-overlay-desc {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-overlay-desc {
+    max-width: 370px;
+  }
 }
 
 .portfolio-link:hover .portfolio-overlay-desc {
@@ -790,38 +845,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 5px;
-  margin-top: 94px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-top: 60px;
   margin-bottom: 34px;
+  max-width: 326px;
 }
-
-.contacts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
-  margin-left: 315px;
+@media screen and (min-width: 768px) {
+  .filter-list {
+    max-width: 575px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-.contacts-list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-  color: rgb(117, 117, 117);
-  -webkit-transition: color 0.5s ease;
-  transition: color 0.5s ease;
-}
-.contacts-list-item:hover {
-  color: rgb(33, 150, 243);
-}
-.contacts-list-svg {
-  fill: currentColor;
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-top: 94px;
+  }
 }
 
 .section-clients {
@@ -1113,6 +1157,7 @@ body {
   }
 }
 .header {
+  border-bottom: 1px solid rgb(236, 236, 236);
   padding: 16px 0;
 }
 .header-wrap {
@@ -1136,10 +1181,6 @@ body {
   .header {
     padding: 25px 0;
   }
-}
-
-.header {
-  border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 .section-hero {
