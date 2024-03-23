@@ -26,6 +26,7 @@
     flex-direction: column;
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
   
     &-desc{
         @include font-style(Roboto, 20px, 700, 1.1, 0.03em, center, _);
